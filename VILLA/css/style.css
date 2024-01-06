@@ -1,14 +1,58 @@
+/* basic css reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* setting the min height to browsers height setting browsers font*/
 body{
     min-height: 100vh;
     width: 100%;
     font-size: 1.5rem;
 }
+/* inherit the browser font to input and button */
 input button {
     font: inherit;
+}
+/* creating uls list  inline and removing disk */
+ul{ 
+    display: inline-block;
+    list-style-type: none;
+    padding: 0.5rem;
+    text-align: right;
+    margin: 0;  
+}
+
+.info{
+    display: inline-block;
+}
+/* translating ul to float */
+.float{
+    float:right;
+}
+/* clearing float */
+.clear{
+    clear: both;
+}
+
+.icon {
+    display: inline-block;
+}
+
+.fa-brands{
+    background-color: grey;
+    font-size: 1em;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%; 
+    color: white;
+}
+/* setting color of icon */
+.color{
+    color:orange;
+}
+/* setting typograpy of infoicon text */
+.infotxt{
+    color: gray;
+    font-size: small;
 }
